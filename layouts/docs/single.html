@@ -8,7 +8,7 @@
       <ul>
         {{- range (.Site.Menus.docs) }}
         {{- $isCurrent := (eq (trim $currentPage.RelPermalink "/") (trim .URL "/")) }}
-        <li class="mt-1 first:mt-0"><a class="text-sm font-medium {{ if $isCurrent }} text-gray-500 cursor-not-allowed{{ else }} text-gray-600 hover:text-gray-800{{ end }}"{{ if not $isCurrent }} href="{{ .URL | relLangURL }}"{{ end }}>{{ .Name }}</a></li>
+        <li class="mt-1 first:mt-0"><a class="sm:text-sm font-medium {{ if $isCurrent }} text-gray-500 cursor-not-allowed{{ else }} text-gray-600 hover:text-gray-800{{ end }}"{{ if not $isCurrent }} href="{{ .URL | relLangURL }}"{{ end }}>{{ .Name }}</a></li>
         {{- end }}
       </ul>
     </div>
