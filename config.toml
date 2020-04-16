@@ -13,7 +13,6 @@ rssLimit = 100
 enableEmoji = true
 enableRobotsTXT = true
 pluralizelisttitles = false
-footnoteReturnLinkContents = "&#8617;"
 
 [permalinks]
 posts = "/:filename"
