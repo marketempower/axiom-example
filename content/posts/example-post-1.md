@@ -46,30 +46,30 @@ The blockquote element represents content that is quoted from another source, op
 
 ## Tables
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
+Tables aren't part of the core Markdown spec, but Hugo supports them.
 
    Name | Age
 --------|------
     Bob | 27
   Alice | 23
 
-### Inline Markdown within tables
+### Using Markdown inside table cells
 
-| Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Table      |
-| ---------- | --------- | ----------------- | ---------- |
-| *italics*  | **bold**  | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code`     |
+| Italics   | Bold     | Code   |
+| --------  | -------- | ------ |
+| *italics* | **bold** | `code` |
 
 ## Code Blocks
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
+  <meta charset="utf-8">
+  <title>Title</title>
 </head>
 <body>
-  <p>Test</p>
+  <p>Lorem...</p>
 </body>
 </html>
 ```
@@ -88,19 +88,39 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 * Another item
 * And another item
 
-### Nested list
+### Nested Lists
 
-* Item
-1. First Sub-item
-2. Second Sub-item
+* ul > ul
+    * First Sub-item
+    * Second Sub-item
+
+1. ol > ol
+    1. First Sub-item
+    1. Second Sub-item
+
+* ul > ol
+    1. First Sub-item
+    1. Second Sub-item
+
+1. ol > ul
+    * First Sub-item
+    * Second Sub-item
+
+* ul > ul > ul
+    * First Sub-item
+    * Second Sub-item
+        * Third Sub-Sub-item
+
+1. ol > ol > ol
+    1. First Sub-item
+    1. Second Sub-item
+        1. Third Sub-Sub-item
 
 ## Other Elements - abbr, sub, sup, kbd, mark
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
 
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+H<sub>2</sub>O X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 

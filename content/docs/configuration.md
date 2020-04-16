@@ -60,8 +60,6 @@ enableEmoji = true
 enableRobotsTXT = true
 # Don't automatically mangle titles
 pluralizelisttitles = false
-# Footnote entity (broken in Hugo currently)
-footnoteReturnLinkContents = "&#8617;"
 ```
 
 > If you change the `defaultContentLanguage` you must add the new language in the Config `[languages]` table, and an i18n language file in `/i18n/lang-code.toml`.
