@@ -1,0 +1,35 @@
++++
+title = "A Powerful Hugo Theme"
+subtitle = "Axiom is a powerful, high performance, modular Hugo theme, built with Tailwind CSS and Alpine JS."
+description = "Axiom is a powerful, high performance, modular Hugo theme, designed to make the readers of your content and the search engines happy."
++++
+
+{{< blocks/section >}}
+{{< figure src="image/page-default.webp"  caption="Axiom - A Hugo Theme" >}}
+{{< /blocks/section >}}
+
+{{< blocks/section width="max-w-2xl cdata" mdown="off">}}
+{{< headless-resource "/home/welcome" >}}
+
+{{< blocks/justify class="mt-4" >}}
+{{< button text="Axiom Theme" type="info" icon="github" href="https://github.com/marketempower/axiom" >}}
+&nbsp;&nbsp;
+{{< button text="Axiom Example" type="info" icon="github" href="https://github.com/marketempower/axiom-example" >}}
+{{< /blocks/justify >}}
+{{< /blocks/section >}}
+
+{{< blocks/section >}}
+<div class="sm:flex">
+  <div class="cdata">
+    {{< headless-resource "/home/about" >}}
+  </div>
+  <div class="cdata mt-8 sm:ml-8 sm:mt-0">
+    {{< headless-resource "/home/features" >}}
+  </div>
+</div>
+{{< /blocks/section >}}
+
+{{< blocks/section width="max-w-2xl" mdown="off" >}}
+{{< term-cloud "tags" >}}
+{{< recent-pages 3 >}}
+{{< /blocks/section >}}

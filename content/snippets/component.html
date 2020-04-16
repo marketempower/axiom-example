@@ -1,0 +1,33 @@
++++
++++
+<div x-data="">
+  <button type="submit" @click="">Submit</button>
+  <template x-if="">
+    <pre x-html=""></pre>
+  </template>
+</div>
+
+<script>
+function init() {
+  return {
+    query: '',
+    loading: true,
+    result: null,
+    search() {
+      if (!this.query) {
+        return;
+      }
+      this.loading = true;
+      const url = ``;
+
+      fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        this.result = JSON.stringify(data);
+        console.log(this.result);
+        this.loading = false;
+      });
+    },
+  };
+}
+</script>

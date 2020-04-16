@@ -1,0 +1,47 @@
+/*
+  NOTE: Begin each URL with the {{ .host }} variable!
+*/
+/* Title Content Font */
+@font-face {
+  font-family: 'font-content-title';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('{{ .host }}title-400-font.woff') format('woff');
+}
+
+/* Sans-Serif Content Font */
+@font-face {
+  font-family: 'font-content-sans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('{{ .host }}sans-400-font.woff') format('woff');
+}
+
+/* Serif Content Font */
+@font-face {
+  font-family: 'font-content-serif';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('{{ .host }}serif-400-font.woff') format('woff');
+}
+
+/* BOLD Serif Content Font */
+@font-face {
+  font-family: 'font-content-serif';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('{{ .host }}serif-700-font.woff') format('woff');
+}
+
+/* ITALIC Serif Content Font */
+@font-face {
+  font-family: 'font-content-serif';
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('{{ .host }}serif-italic-400-font.woff') format('woff');
+}

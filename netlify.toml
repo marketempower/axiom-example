@@ -1,0 +1,16 @@
+[build]
+environment = { HUGO_VERSION = "0.69.0", RUBY_VERSION = "2.6.2" }
+publish = "public"
+command = "echo 'default context'"
+
+[context.production]
+environment = { HUGO_ENV = "production" }
+command = "hugo -v --gc --minify"
+
+[context.deploy-preview]
+environment = { HUGO_ENV = "development" }
+command = "hugo --config config.toml,config.dev.toml -v --gc --i18n-warnings --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+environment = { HUGO_ENV = "development" }
+command = "hugo --config config.toml,config.dev.toml -v --gc --i18n-warnings --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"

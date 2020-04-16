@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="docs-single">
+  <div class="sm:flex sm:justify-center mx-4 md:mx-8 mt-8">
+    <div class="ax-nav flex-none ax-content min-w-0 sm:w-1/6">
+      <h4 class="text-gray-500 font-semibold">{{ .Section | humanize }}</h4>
+
+      {{- $currentPage := . }}
+      <ul>
+        {{- range (.Site.Menus.docs) }}
+        {{- $isCurrent := (eq (trim $currentPage.RelPermalink "/") (trim .URL "/")) }}
+        <li class="mt-1 first:mt-0"><a class="text-sm font-medium {{ if $isCurrent }} text-gray-500 cursor-not-allowed{{ else }} text-gray-600 hover:text-gray-800{{ end }}"{{ if not $isCurrent }} href="{{ .URL | relLangURL }}"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+    <div class="ax-content sm:flex-grow min-w-0 sm:max-w-2xlp mt-8 sm:mt-0">
+      <h1 class="title-page">{{ .Title }}</h1>
+
+      <article class="cdata mt-8">
+        {{ .Content }}
+      </article>
+    </div>
+  </div>
+</div>
+{{ end }}

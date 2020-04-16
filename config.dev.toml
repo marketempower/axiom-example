@@ -1,0 +1,18 @@
+baseURL = "http://localhost:1313"
+
+[params.services]
+analyticsId = ""
+adwordsId = ""
+adsenseId = ""
+adsenseAdSlotId = ""
+adsenseLazy = false
+adwordsConversionId = ""
+adwordsConversionValue = 0
+facebookApp = ""
+facebookPixel = ""
+
+[params.cdn]
+provider = "local"
+[params.cloudinary]
+host = "https://res.cloudinary.com/CLOUD_NAME/"
+version = ""

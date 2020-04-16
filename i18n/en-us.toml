@@ -1,0 +1,2 @@
+[copyright]
+other = "{{ .Site.Title }}"

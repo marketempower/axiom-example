@@ -1,0 +1,203 @@
+baseURL = "https://axiom-example.netlify.app"
+
+title = "Axiom Example"
+languageCode = "en-us"
+defaultContentLanguage = "en-us"
+
+theme = "axiom"
+
+paginate = 2
+canonifyURLs = false
+summaryLength = 40
+rssLimit = 100
+enableEmoji = true
+enableRobotsTXT = true
+pluralizelisttitles = false
+footnoteReturnLinkContents = "&#8617;"
+
+[permalinks]
+posts = "/:filename"
+
+[params]
+mainSections = ["posts"]
+copyrightYear = 2019
+# Go Reference time: Mon Jan 2 15:04:05 MST 2006
+dateFormat = "Jan 2, 2006 3:04PM"
+
+[params.brand]
+domain = "example.com"
+email = "info@example.com"
+
+[params.social]
+facebook = "https://www.facebook.com/user_or_page"
+github = "https://github.com/user"
+instagram = "https://instagram.com/user"
+linkedin = "https://www.linkedin.com/in/user"
+pinterest = "https://www.pinterest.com/user"
+stackoverflow = "https://stackoverflow.com/users/user"
+twitter = "https://twitter.com/user"
+youtube = "https://www.youtube.com/user"
+footer = ["twitter", "github", "instagram"]
+
+[params.services]
+analyticsId = ""
+adwordsId = ""
+adsenseId = ""
+adsenseAdSlotId = ""
+adsenseLazy = false
+adwordsConversionId = ""
+adwordsConversionValue = 0
+facebookApp = ""
+facebookPixel = ""
+
+[params.logo]
+inline = true
+path = "image/brand/logo.svg"
+
+[params.image]
+width = "2048"
+height = "1024"
+faviconIco = "favicon.ico"
+faviconAlt = "image/brand/favicon.png"
+icon1To1 = "image/brand/icon-1-1.png"
+icon2To1 = "image/brand/icon-2-1.png"
+default = "image/page-default.webp"
+
+[params.font]
+type = ""
+path = ""
+files = []
+
+[params.cdn]
+provider = "local"
+type = "image"
+
+[params.cloudinary]
+host = "https://res.cloudinary.com/CLOUD_NAME/"
+version = ""
+image = "image/upload/"
+raw = "raw/upload/"
+video = "video/upload/"
+
+[params.cloudinary.presets]
+base = "f_auto,q_auto/"
+page = "w_auto,dpr_auto,c_scale,f_auto,q_auto/"
+feature = "w_auto,dpr_auto,c_scale,f_auto,q_auto/"
+summary = "w_auto,dpr_auto,c_scale,f_auto,q_auto/"
+
+[outputs]
+home = ["HTML", "ATOM"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+taxonomyTerm = ["HTML"]
+
+[outputFormats]
+[outputFormats.ATOM]
+name = "ATOM"
+baseName = "feed"
+mediaType = "application/atom+xml"
+
+[mediaTypes]
+[mediaTypes."application/atom+xml"]
+suffixes = ["atom"]
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+definitionList = false
+footnote = true
+linkify = false
+strikethrough = false
+table = true
+taskList = false
+typographer = false
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.parser]
+attribute = false
+autoHeadingID = false
+[markup.highlight]
+codeFences = false
+noClasses = false
+tabWidth = 2
+
+[menu]
+[[menu.main]]
+url = "/posts/"
+name = "Posts"
+weight = 1
+
+[[menu.main]]
+url = "/docs/"
+name = "Docs"
+weight = 2
+
+[[menu.foot]]
+url = "/posts/"
+name = "Posts"
+weight = 1
+
+[[menu.foot]]
+url = "/docs/"
+name = "Docs"
+weight = 2
+
+[[menu.foot]]
+url = "/about/"
+name = "About"
+weight = 3
+
+[[menu.foot]]
+url = "/contact/"
+name = "Contact"
+weight = 4
+
+[[menu.foot]]
+url = "/privacy/"
+name = "Privacy"
+weight = 5
+
+[[menu.docs]]
+url = "/docs/"
+name = "Overview"
+weight = 1
+
+[[menu.docs]]
+url = "/docs/quick-start/"
+name = "Quick Start"
+weight = 2
+
+[[menu.docs]]
+url = "/docs/features/"
+name = "Features"
+weight = 3
+
+[[menu.docs]]
+url = "/docs/configuration/"
+name = "Configuration"
+weight = 4
+
+[[menu.docs]]
+url = "/docs/frontmatter/"
+name = "Frontmatter"
+weight = 5
+
+[[menu.docs]]
+url = "/docs/shortcodes/"
+name = "Shortcodes"
+weight = 6
+
+[[menu.docs]]
+url = "/docs/archetypes/"
+name = "Archetypes"
+weight = 7
+
+[[menu.docs]]
+url = "/docs/extending/"
+name = "Extending"
+weight = 8
+
+[languages]
+[languages."en-us"]
+weight = 1
+languageName = "US English"
