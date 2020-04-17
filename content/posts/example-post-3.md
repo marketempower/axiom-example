@@ -2,8 +2,8 @@
 date = "2020-01-01T16:30:00Z"
 lastmod = "2020-01-01T16:30:00Z"
 author = "axiom"
-title = "Example Post 1"
-subtitle = "Example Post 1. Lorem est tota propiore conpellat pectoribus de pectora summo."
+title = "Example Post 3"
+subtitle = "Example Post 3. Lorem est tota propiore conpellat pectoribus de pectora summo."
 feature = "image/page-default.webp"
 tags = ["axiom", "hugo", "jamstack"]
 categories = ["axiom", "hugo", "jamstack"]
