@@ -8,8 +8,8 @@
   "repository": "github:marketempower/axiom-example.git",
   "license": "CC-BY-SA-4.0",
   "scripts": {
-    "prd": "hugo -e production -v --gc --minify --cleanDestinationDir",
-    "dev": "hugo -e development --config config.toml,config.dev.toml -v --gc --cleanDestinationDir --i18n-warnings --buildDrafts --buildFuture",
+    "prd": "hugo -e production -v --i18n-warnings --minify --gc --cleanDestinationDir && cd ./functions && npm install",
+    "dev": "hugo -e development --config config.toml,config.dev.toml -v --i18n-warnings --gc --cleanDestinationDir --buildDrafts --buildFuture",
     "srv": "hugo server -e development --config config.toml,config.dev.toml -v --i18n-warnings --buildDrafts --buildFuture --disableFastRender"
   }
 }
