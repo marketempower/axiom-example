@@ -65,11 +65,11 @@ A pre-configured [package.json](https://github.com/marketempower/axiom-example/b
 
 ```shell
 # development build
-npm run dev
+npm run hugo:dev
 # production build
-npm run prd
+npm run hugo:prd
 # development build, server, and watch
-npm run srv
+npm run hugo:srv
 ```
 
 See the [Extending]({{< relref "docs/extending" >}}) section of the documentation for information on developing the Theme's internal `CSS` and `JS`.
