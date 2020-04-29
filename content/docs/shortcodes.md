@@ -280,7 +280,7 @@ mdown: "toggle markdownify on Inner Content" # default on
 ```html
 <!-- output -->
 <div class="section flex justify-center">
-  <div class="section-inner flex-grow min-w-0 mx-4 md:mx-8 mt-8 max-w-2xl cdata">
+  <div class="section-inner flex-grow min-w-0 mx-4 sm:mx-8 mt-8 max-w-2xl cdata">
     <!-- SNIP: headless-resource Shortcode HTML output -->
   </div>
 </div>
