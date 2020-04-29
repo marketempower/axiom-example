@@ -46,7 +46,7 @@ Axiom has a very advanced [CDATA CSS](https://github.com/marketempower/axiom/blo
 
 All Markdown content in the Content directory automatically gets styled with the `cdata` styles. When using Shortcodes or building out the Homepage, you can use the `cdata` class to style content using those rules.
 
-Why `cdata`? CDATA means "character data" in SGML. Many themes use a class name like "markdown" or "mdown" for this purpose, but we feel it's too limiting and doesn't consider other future syntax's that may serve the same use as Markdown does now. CDATA is just a way for us to know it's unstyled bare HTML, that needs CSS styles based on element names instead of class names.
+Why `cdata`? CDATA means "character data" in SGML. Many themes use a class name like "markdown" or "mdown" for this purpose, but we feel it's too limiting and doesn't consider other future syntax that may serve the same use as Markdown does now. CDATA is just a way for us to know it's unstyled bare HTML, that needs CSS styles based on element names instead of class names.
 
 ## Authors
 

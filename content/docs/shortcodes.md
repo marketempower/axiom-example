@@ -11,7 +11,7 @@ Axiom's powerful custom Shortcodes allow you to add complex HTML components to y
 ## Things to Know
 
 - Axiom's Shortcodes can be declared using [Named or Positional](https://gohugo.io/templates/shortcode-templates/#positional-vs-named-parameters) Parameters (except for _Figure_).
-- When using CSS class names in Shortcodes, be aware that not all Tailwind CSS classes are available. Axiom's CSS file is _purged_ for production and will only include the class names used by the Theme and Example website. See the [Extending]({{< relref "docs/extending" >}}) section to learn how to use Custom CSS with Axiom and include extra classes that are desired.
+- When using CSS class names in Shortcodes, be aware that not all Tailwind CSS classes are available. Axiom's CSS file is _purged_ for production and will only include the class names used by the Theme and Example website. See the [Extending]({{< relref "docs/extending" >}}) section to learn how to use Custom CSS with Axiom.
 
 ## Alert
 

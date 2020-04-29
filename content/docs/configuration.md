@@ -239,7 +239,7 @@ Example settings to load fonts:
 ```toml
 type = "font/woff"
 path = "font/"
-files = ["title-400-font.woff", "sans-400-font.woff", "serif-italic-400-font.woff"]
+files = ["title-400.woff", "sans-400.woff", "serif-italic-400.woff"]
 ```
 
 If you have many font files added in the Type CSS file, you don't have to preload all of them. You can list a subset of the most important ones in the Config, and let the others load normally. As long as at least one font file is in the `files` array, the Type CSS features will be enabled.

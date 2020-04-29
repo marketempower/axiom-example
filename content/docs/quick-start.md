@@ -61,9 +61,12 @@ Submodules have the advantage of being much easier to update and keep in sync.
 
 ## Local Development
 
-A pre-configured [package.json](https://github.com/marketempower/axiom-example/blob/master/package.json) file is provided which contains three `npm scripts` offering enhanced local development. No dependencies are required:
+A pre-configured [package.json](https://github.com/marketempower/axiom-example/blob/master/package.json) file is provided which contains a set of `npm scripts` you can use locally.
 
 ```shell
+# install dependencies
+npm install
+
 # development build
 npm run hugo:dev
 # production build
@@ -72,4 +75,8 @@ npm run hugo:prd
 npm run hugo:srv
 ```
 
-See the [Extending]({{< relref "docs/extending" >}}) section of the documentation for information on developing the Theme's internal `CSS` and `JS`.
+Additional scripts are includes for building `CSS` and `JS` assets.
+
+{{< alert "Axiom's Tailwind CSS is *purged* for production." "alert" >}}
+
+See the [Extending]({{< relref "docs/extending" >}}) section of the documentation for information on developing Custom `CSS`, and `JS`.
