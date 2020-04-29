@@ -10,6 +10,29 @@
   "scripts": {
     "hugo:prd": "hugo -e production -v --i18n-warnings --minify --gc --cleanDestinationDir",
     "hugo:dev": "hugo -e development --config config.toml,config.dev.toml -v --i18n-warnings --gc --cleanDestinationDir --buildDrafts --buildFuture",
-    "hugo:srv": "hugo server -e development --config config.toml,config.dev.toml -v --i18n-warnings --buildDrafts --buildFuture --disableFastRender"
+    "hugo:srv": "hugo server -e development --config config.toml,config.dev.toml -v --i18n-warnings --buildDrafts --buildFuture --disableFastRender",
+    "assets:prd": "NODE_ENV=production npm run css && npm run js",
+    "assets:dev": "NODE_ENV=development npm run css && npm run js",
+    "css": "npm run css:type && npm run css:custom",
+    "css:custom": "postcss ./src/index.css --verbose -o ./assets/custom.css",
+    "css:type": "postcss ./src/type.css --verbose -o ./assets/type.css",
+    "js": "npm run js:index && npm run js:custom",
+    "js:custom": "concat -o ./assets/custom.js ./src/index.min.js",
+    "js:index": "terser ./src/index.js -c toplevel,sequences=false,drop_console=true -o ./src/index.min.js",
+    "watch": "npm run watch:css & npm run watch:js",
+    "watch:css": "chokidar \"./src/**/*.css\" \"./tailwind.config.js\" -c \"NODE_ENV=development npm run css\"",
+    "watch:js": "chokidar \"./src/**/*.js\" -c \"NODE_ENV=development npm run js\""
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "autoprefixer": "^9.7.6",
+    "chokidar-cli": "^2.1.0",
+    "concat": "^1.0.3",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nesting": "^7.0.1",
+    "tailwindcss": "^1.3.5",
+    "terser": "^4.6.12"
   }
 }

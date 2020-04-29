@@ -1,0 +1,45 @@
+/* src type css */
+/* Title Content Font */
+@font-face {
+  font-family: 'content-title';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('{{ .host }}title-400.woff') format('woff');
+}
+
+/* Sans-Serif Content Font */
+@font-face {
+  font-family: 'content-sans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('{{ .host }}sans-400.woff') format('woff');
+}
+
+/* Serif Content Font */
+@font-face {
+  font-family: 'content-serif';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('{{ .host }}serif-400.woff') format('woff');
+}
+
+/* BOLD Serif Content Font */
+@font-face {
+  font-family: 'content-serif';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('{{ .host }}serif-700.woff') format('woff');
+}
+
+/* ITALIC Serif Content Font */
+@font-face {
+  font-family: 'content-serif';
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('{{ .host }}serif-italic-400.woff') format('woff');
+}
