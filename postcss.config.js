@@ -6,10 +6,10 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   content: [
     './*(layouts|content|data|static)/**/*.*(html|toml|md)',
   ],
-  // tailwindcss/pull/1639
+  // tailwindcss/src/lib/purgeUnusedStyles.js
   defaultExtractor: content => {
     const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || []
-    const innerMatches = content.match(/[^<>"'`\s.()]*[^<>"'`\s.():]/g) || []
+    const innerMatches = content.match(/[^<>"'`\s.(){}\[\]#=%]*[^<>"'`\s.(){}\[\]#=%:]/g) || []
     return broadMatches.concat(innerMatches)
   },
 })
