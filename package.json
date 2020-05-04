@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "axiom-example",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Example website project for the Axiom Hugo theme.",
   "author": "Jhaura Wachsman <jw@jhaurawachsman.com> (https://www.jhaurawachsman.com/)",
   "homepage": "https://github.com/marketempower/axiom-example",
