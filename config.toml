@@ -39,7 +39,7 @@ youtube = "https://www.youtube.com/user"
 footer = ["twitter", "github", "instagram"]
 
 [params.services]
-analyticsId = "UA-160259978-2"
+analyticsId = "UA-160259978-4"
 adwordsId = ""
 adsenseId = ""
 adsenseAdSlotId = ""
