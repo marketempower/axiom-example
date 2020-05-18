@@ -1,5 +1,5 @@
 [build]
-environment = { HUGO_VERSION = "0.69.0", RUBY_VERSION = "2.6.2" }
+environment = { HUGO_VERSION = "0.70.0" }
 publish = "public"
 command = "echo 'default context'"
 
