@@ -179,7 +179,7 @@ facebookPixel = "FB-DEV"
 
 The logo in the website's Header can be shown as 1) styled text, 2) an image, or 3) an inline svg.
 
-1) TEXT: Show the website's Title (`.Site.Title` param) in styled text instead of a logo:
+1\. TEXT: Show the website's Title (`.Site.Title` param) in styled text instead of a logo:
 
 ```toml
 [params.logo]
@@ -187,7 +187,7 @@ inline = false
 path = ""
 ```
 
-2) IMAGE: Display the logo as an image (`<img>`):
+2\. IMAGE: Display the logo as an image (`<img>`):
 
 ```toml
 [params.logo]
@@ -197,7 +197,7 @@ path = "image/brand/logo.png"
 
 > Note: any file type (extension) may be used, i.e., .jpg, .gif, .svg, etc.
 
-3) INLINE SVG: Display the logo as an inline svg (`<svg>`):
+3\. INLINE SVG: Display the logo as an inline svg (`<svg>`):
 
 > Note: Axiom uses Hugo's `readFile` function to get the contents of the SVG as a string. The `path` must be relative to the _Static_ directory (`/static/`) A CDN URL cannot be used with `readFile`.
 
@@ -207,7 +207,7 @@ inline = true
 path = "image/brand/logo.svg"
 ```
 
-Advantages with this option include the ability to manipulate the SVG with styles, such as changing the color or adding a hover effect. Also, it reduces http requests by one.
+Advantages with this option include the ability to manipulate the SVG with styles, such as changing the color or adding a hover effect. Also, it reduces HTTP requests by one.
 
 ## Images
 
