@@ -22,6 +22,8 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 ##### H5
 ###### H6
 
+Headings `<h3>`-`<h6>` are all sized the same.
+
 ## Paragraph
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur?
@@ -32,12 +34,12 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
 
-### Blockquote without attribution
+Blockquote without attribution:
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use *Markdown syntax* within a blockquote.
 
-### Blockquote with attribution
+Blockquote with attribution:
 
 > You can trade hours for dollars or ideas for millions.</p>
 > — <cite>Cactus Jack[^1]</cite>
@@ -53,13 +55,15 @@ Tables aren't part of the core Markdown spec, but Hugo supports them.
     Bob | 27
   Alice | 23
 
-### Using Markdown inside table cells
+Using Markdown inside table cells:
 
 | Italics   | Bold     | Code   |
 | --------  | -------- | ------ |
 | *italics* | **bold** | `code` |
 
 ## Code Blocks
+
+Hugo's built-in Chroma syntax highlighting with Axiom's custom colors:
 
 ```html
 <!doctype html>
@@ -86,7 +90,9 @@ Tables aren't part of the core Markdown spec, but Hugo supports them.
 
 * List item
 * Another item
-* And another item
+* Item with paragraph:
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 
 ### Nested Lists
 
