@@ -22,6 +22,7 @@ mainSections = ["posts"]
 copyrightYear = 2019
 # Go Reference time: Mon Jan 2 15:04:05 MST 2006
 dateFormat = "Jan 2, 2006 3:04PM"
+highlight = "dark"
 
 [params.brand]
 domain = "example.com"
@@ -116,9 +117,10 @@ unsafe = true
 attribute = false
 autoHeadingID = false
 [markup.highlight]
-codeFences = false
 noClasses = false
 tabWidth = 2
+lineNos = false
+lineNumbersInTable = false
 
 [menu]
 [[menu.main]]
