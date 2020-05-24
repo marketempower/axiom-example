@@ -8,7 +8,7 @@ categories = ["docs"]
 
 ## Custom CSS / JS
 
-Axiom is setup so you can add your own custom CSS and JS code to extend the base files. To take advantage of this feature, add a file named `custom.css` and/or `custom.js` to the  _Assets_ directory (`/assets/`). Axiom will bundle the custom files with the base Theme asset files, minify the custom code, and preload the bundles to enhance performance.
+Axiom is setup so you can add your own custom CSS and JS code to extend the base files. To take advantage of this feature, add a file named `custom.css` and/or `custom.js` to your website's project root  _Assets_ directory (`/assets/`). Axiom will bundle the custom files with the base Theme asset files, minify the custom code, and preload the bundles to enhance performance.
 
 The Example website Assets directory contains a pair of empty custom CSS and JS files to get you started.
 
@@ -62,6 +62,14 @@ Use the same methods as described above for Custom CSS. Choose either the Vanill
 See the Example website's [EXAMPLE-TYPE.css](https://github.com/marketempower/axiom-example/blob/master/src/EXAMPLE-TYPE.css) file and the [Configuration]({{< relref "configuration" >}}) `params.font` section to get started.
 
 > Note: Unless you're using absolute URLS, begin each URL with the `{{ .host }}` variable so that proper paths/URLs are substituted on build.
+
+## Custom Syntax Highlighting CSS
+
+To add your own Custom Syntax Highlighting CSS use one of the options below:
+
+1\. **Vanilla CSS**: Create one or both **Assets** Custom Syntax Highlighting CSS files (`/assets/syntax-dark.css`) and/or (`/assets/syntax-light.css`). Either duplicate and edit Axiom's version or use one of the freely available color schemes available in the Chroma Gallery (you will need to prepend some CSS from Axiom's version to the top of the third-party schemes).
+
+2\. **Build CSS**: Add **PostCSS** style CSS using the **Source** Custom Syntax Highlighting CSS files (`/src/syntax-dark.css`) and/or (`/src/syntax-light.css`). Using this method you have access to all Tailwind CSS features, the `@import` function, and more.
 
 ## Custom Layouts
 

@@ -6,7 +6,7 @@ tags = ["features"]
 categories = ["docs"]
 +++
 
-SEO and Social Media features include Article sharing via Facebook and Twitter (without heavy Javascript libraries), Google Structured Data `ld+json` with a full Schema.org `Article` fieldset, Open-Graph tags, Serverless CDN support (Netlify), Asset CDN support (Cloudinary) with image transformations for responsive images, ATOM feed Syndication XML format, asset preloading, third-party prefetching, SVG icons, syntax highlighting with Prism.js, custom 404 error page, custom CSS/JS support, and a full Multilingual implementation. Built with Tailwind CSS, Alpine JS, and an NPM Scripts (task-runner-free) build process, the Axiom Hugo theme is feature packed.
+SEO and Social Media features include Article sharing via Facebook and Twitter (without heavy Javascript libraries), Google Structured Data `ld+json` with a full Schema.org `Article` fieldset, Open-Graph tags, Serverless CDN support (Netlify, Vercel), Asset CDN support (Cloudinary) with image transformations for responsive images, ATOM feed Syndication XML format, asset preloading, third-party prefetching, SVG icons, syntax highlighting with Chroma, custom 404 error page, custom CSS/JS support, and a full Multilingual implementation. Built with Tailwind CSS, Alpine JS, and an NPM Scripts (task-runner-free) build process, the Axiom Hugo theme is feature packed.
 
 ## Modularity (DRY-er Content)
 
@@ -16,7 +16,7 @@ The Home (`/content/home/`) and Snippets (`/content/snippets/`) Content director
 
 ## Extendable
 
-Axiom is customizable in almost every way including Custom CSS and Javascript. Visit the [Extending]({{< relref "docs/extending" >}}) page to learn more.
+Axiom is customizable in almost every way including Custom CSS, Javascript, and Syntax Highlighting. Visit the [Extending]({{< relref "docs/extending" >}}) page to learn more.
 
 ## Shortcodes
 
@@ -28,9 +28,9 @@ Axiom's Homepage is a modular design without any layout applied, in essence, it'
 
 The Example website [Homepage](https://github.com/marketempower/axiom-example/blob/master/content/_index.html) shows a common configuration and can be used as a starting point.
 
-## CDNs and Netlify
+## CDNs, Serverless
 
-Axiom has support for [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/rjndspxhgeglpwn0hwzv) CDN built in, and is [Netlify](https://www.netlify.com/) ready.
+Axiom has support for [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/rjndspxhgeglpwn0hwzv) CDN built in, and is serverless ready ([Netlify](https://www.netlify.com/), [Vercel](https://www.vercel.com/)).
 
 ## Archetypes
 
@@ -42,11 +42,15 @@ Fine tune individual Content entries with Axiom's custom Frontmatter fields. Vis
 
 ## Markdown Styling
 
-Axiom has a very advanced [CDATA CSS](https://github.com/marketempower/axiom/blob/master/src/cdata.css) file. It has an extremely specific specificity and only affects the direct children of the parent element with the `class="cdata"` attribute.
+Axiom has a very advanced [CDATA CSS](https://github.com/marketempower/axiom/blob/master/src/cdata.css) file. It has high specificity and only affects the direct children of the parent element with the `class="cdata"` attribute.
 
 All Markdown content in the Content directory automatically gets styled with the `cdata` styles. When using Shortcodes or building out the Homepage, you can use the `cdata` class to style content using those rules.
 
 Why `cdata`? CDATA means "character data" in SGML. Many themes use a class name like "markdown" or "mdown" for this purpose, but we feel it's too limiting and doesn't consider other future syntax that may serve the same use as Markdown does now. CDATA is just a way for us to know it's unstyled bare HTML, that needs CSS styles based on element names instead of class names.
+
+## Syntax Highlighting
+
+Axiom uses Hugo's built-in syntax highlighting powered by Chroma. You can choose between Axiom's built-in dark and light color schemes, or provide your own bespoke color scheme. Highlighting CSS is inlined for performance. Additionally, you can turn it off completely, such as when you want to use a third-party Javascript library.
 
 ## Authors
 
@@ -60,7 +64,7 @@ Rich typography is one of the best ways to distinguish your website apart from t
 
 ## Sharing
 
-Axiom is configured to allow users to share your content via Facebook and Twitter. The implementation uses non-javascript library techniques, so your website speed won't be slowed down.
+Axiom is configured to allow users to share your content via Facebook and Twitter. The implementation uses non-Javascript library techniques, so your website speed won't be slowed down.
 
 For Twitter sharing, set the Author's Twitter username in the Author's Data file. For Facebook sharing, set the website's Facebook App Id in the _Services_ Config (`params.services` `facebookApp`) option.
 
@@ -74,14 +78,14 @@ If set in the _Image_ Config (`params.image` `icon1To1` and `icon2To1`), an icon
 
 __Google Analytics__: Collect data with Google Analytics.
 
-__Google Ads__: Collect data with Google Ads.
+__Google Ads__: Collect data and track conversions with Google Ads.
 
-__Google Adsense__: Axiom is ready for Ads if you choose to serve them. There is a single responsive Ad Slot at the bottom of Section Content.
+__Google Adsense__: Axiom is ready for Ads if you choose to serve them. There is a single responsive Ad Slot at the bottom of all Section Content.
 
-If you set an Adsense Id in the _Services_ Config (`params.services` `adsenseId`), Ads will be activated, otherwise all Ads related javascript and code will not be output. Be sure to also set your `adsenseAdSlotId`.
+If you set an Adsense Id in the _Services_ Config (`params.services` `adsenseId`), Ads will be activated, otherwise all Ads related Javascript and code will not be output. Be sure to also set your `adsenseAdSlotId`.
 
-Setting the `adsenseLazy` to true will delay the loading of the javascript slightly to enhance page speed.
+Setting the `adsenseLazy` to true will delay the loading of the Javascript slightly to enhance page speed.
 
 __Facebook__: Collect data, and share Content with Facebook.
 
-If you set a Facebook Pixel Id in the _Services_ Config (`params.services` `facebookPixel`), a lightweight pixel tracker will be activated, otherwise all related javascript and code will not be output. If you set a Facebook App Id in the _Services_ Config (`params.services` `facebookApp`) it will be used for Open-Graph tags and in Content Sharing.
+If you set a Facebook Pixel Id in the _Services_ Config (`params.services` `facebookPixel`), a lightweight pixel tracker will be activated, otherwise all related Javascript and code will not be output. If you set a Facebook App Id in the _Services_ Config (`params.services` `facebookApp`) it will be used for Open-Graph tags and in Content Sharing.

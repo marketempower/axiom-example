@@ -97,7 +97,6 @@ src: "file path plus name, or uuid" # REQUIRED
 preset: "preset name from `params.cloudinary.presets`"
 # file type according to CDN, default "image"
 type: ["image", "video", "raw"]
-
 ```
 
 ```markup
@@ -297,7 +296,7 @@ justify: ["start", "center", "end", "between", "around"]
 class: "optional class names to add"
 ```
 
-```markup
+```
 <!-- example -->
 {{</* blocks/justify class="mt-8" */>}}
 {{</* button text="Download PDF" type="info" icon="download" href="pdf/file.pdf" */>}}
@@ -309,4 +308,22 @@ class: "optional class names to add"
 <div class="flex justify-center mt-8">
   <!-- SNIP: button Shortcode SVG output -->
 </div>
+```
+
+## Readfile and Partial
+
+The Readfile and Partial shortcodes provide a way to include more complex content into your website.
+
+{{< alert "Use Caution: Prevent Dangerous Content" "alert" >}}
+
+The Readfile shortcode accepts one parameter which is required and must be a valid file location according to Hugo.
+
+The Partial shortcode accepts one parameter which is required and must be a valid partial file according to Hugo.
+
+See the Hugo docs on the `readFile` function, and Partials for more details.
+
+```markup
+<!-- example -->
+{{</* readfile "/static/movies.csv" */>}}
+{{</* partial "vcard" */>}}
 ```

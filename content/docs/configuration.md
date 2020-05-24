@@ -70,7 +70,7 @@ There are many more Core options that can be added to suit your needs. See the H
 
 Axiom is configured to use the file name slug as the publicly accessible URL:
 
-```shell
+```toml
 [permalinks]
 posts = "/:filename"
 ```
@@ -90,6 +90,18 @@ copyrightYear = 2019
 # Posts Date format
 # Go Reference time: Mon Jan 2 15:04:05 MST 2006
 dateFormat = "Jan 2, 2006 3:04PM"
+# Chroma Syntax Highlighting
+# Options: dark, light, false
+highlight = "dark"
+omitThemeAttribution = false
+```
+
+To enable Axiom's Syntax Highlighting color schemes to take effect, you will need to enable Markup Highlight Classes:
+
+```toml
+[markup]
+[markup.highlight]
+noClasses = false
 ```
 
 There are many more Param options that can be added to suit your needs. See the Hugo Configuration Documentation for more information.
