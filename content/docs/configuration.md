@@ -102,7 +102,12 @@ To enable Axiom's Syntax Highlighting color schemes to take effect, you will nee
 [markup]
 [markup.highlight]
 noClasses = false
+# Optional line numbers
+lineNos = true
+lineNumbersInTable = false
 ```
+
+Axiom does not support line numbers in a table. If line numbers is on, make sure `lineNumbersInTable = false`.
 
 There are many more Param options that can be added to suit your needs. See the Hugo Configuration Documentation for more information.
 
