@@ -101,11 +101,15 @@ To enable Axiom's Syntax Highlighting color schemes to take effect, you will nee
 ```toml
 [markup]
 [markup.highlight]
+codeFences = true
 noClasses = false
-# Optional line numbers
-lineNos = true
-lineNumbersInTable = false
+
+# Optional line numbers:
+# lineNos = true
+# lineNumbersInTable = false
 ```
+
+Note about `[markup.highlight] -> codeFences`. The Hugo default for this is `true`. Hugo code fence style syntax highlighting will NOT work if it's set to `false`. This config variable doesn't need to be in your Config file unless you want to turn OFF Hugo syntax highlighting completely.
 
 Axiom does not support line numbers in a table. If line numbers is on, make sure `lineNumbersInTable = false`.
 

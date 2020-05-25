@@ -117,10 +117,11 @@ unsafe = true
 attribute = false
 autoHeadingID = false
 [markup.highlight]
+codeFences = true
 noClasses = false
 tabWidth = 2
-lineNos = false
-lineNumbersInTable = false
+# lineNos = true
+# lineNumbersInTable = false
 
 [menu]
 [[menu.main]]
