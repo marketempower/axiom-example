@@ -26,7 +26,7 @@ type: ['default', 'info', 'warn', 'alert']
 badge: "Yikes"
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* alert "An important piece of information." */>}}
 {{</* alert "An important piece of information." "info" */>}}
@@ -49,7 +49,7 @@ cite: "citation for quote"
 link: "link for citation"
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* blockquote "Tip: You can also use standard Markdown Blockquote syntax if you prefer." */>}}
 {{</* blockquote quote="You can trade hours for dollars or ideas for millions." attr="Cactus Jack on" cite="The Shark Tank" link="https://www.example.com/" */>}}
@@ -74,7 +74,7 @@ icon: "SVG icon name"
 href: "URL"
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* button text="Button" */>}}
 {{</* button text="Download PDF" type="info" icon="download" href="pdf/file.pdf" */>}}
@@ -99,14 +99,14 @@ preset: "preset name from `params.cloudinary.presets`"
 type: ["image", "video", "raw"]
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* cdn-url "image/file.jpg" */>}}
 {{</* cdn-url src="image/file.jpg" preset="base" */>}}
 {{</* cdn-url src="font/file.woff" type="raw" */>}}
 ```
 
-```markup
+```plaintext
 <!-- outputs -->
 <!-- 1st example, with 'params.cdn.provider=local' -->
 /image/file.jpg
@@ -130,7 +130,7 @@ Add a Snippet from a [Headless Resource](https://gohugo.io/content-management/pa
 page: "page bundle path and filename excluding extension"
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* headless-resource "/home/welcome" */>}}
 {{</* headless-resource "/components/javascript-template" */>}}
@@ -168,7 +168,7 @@ class: "class names" # default "mt-8"
 style: "style definitions"
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* recent-pages */>}}
 {{</* recent-pages 5 */>}}
@@ -191,7 +191,7 @@ style: "CSS style definitions"
 viewbox: "override viewbox settings"
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* svg name="download" class="h-8 w-auto text-red-500 fill-current" */>}}
 {{</* svg name="instagram" style="width: 2rem; height: 2rem; color: royalblue;" */>}}
@@ -211,7 +211,7 @@ term: "term name" # default "tags"
 count: "show count" # default false
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* term-cloud count=true */>}}
 {{</* term-cloud "categories" */>}}
@@ -248,7 +248,7 @@ captionclass: "figcaption html class attribute"
 preset: "cdn transform preset used in partial 'cdn-src'"
 ```
 
-```markup
+```plaintext
 <!-- examples -->
 {{</* figure src="image/data-chart.webp" */>}}
 {{</* figure src="5e39e315-c06c-4d81-9b4a-35fca661621c" */>}}
@@ -269,7 +269,7 @@ style: "add custom style declarations"
 mdown: "toggle markdownify on Inner Content" # default on
 ```
 
-```markup
+```plaintext
 <!-- example -->
 {{</* blocks/section width="max-w-2xl" */>}}
 {{</* headless-resource "/home/welcome" */>}}
@@ -322,7 +322,7 @@ The Partial shortcode accepts one parameter which is required and must be a vali
 
 See the Hugo docs on the `readFile` function, and Partials for more details.
 
-```markup
+```plaintext
 <!-- example -->
 {{</* readfile "/static/movies.csv" */>}}
 {{</* partial "vcard" */>}}
