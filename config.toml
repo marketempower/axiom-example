@@ -130,75 +130,25 @@ url = "/posts/"
 name = "Posts"
 weight = 1
 
-[[menu.main]]
-url = "/docs/"
-name = "Docs"
-weight = 2
-
 [[menu.foot]]
 url = "/posts/"
 name = "Posts"
 weight = 1
 
 [[menu.foot]]
-url = "/docs/"
-name = "Docs"
-weight = 2
-
-[[menu.foot]]
 url = "/about/"
 name = "About"
-weight = 3
+weight = 2
 
 [[menu.foot]]
 url = "/contact/"
 name = "Contact"
-weight = 4
+weight = 3
 
 [[menu.foot]]
 url = "/privacy/"
 name = "Privacy"
-weight = 5
-
-[[menu.docs]]
-url = "/docs/"
-name = "Overview"
-weight = 1
-
-[[menu.docs]]
-url = "/docs/quick-start/"
-name = "Quick Start"
-weight = 2
-
-[[menu.docs]]
-url = "/docs/features/"
-name = "Features"
-weight = 3
-
-[[menu.docs]]
-url = "/docs/configuration/"
-name = "Configuration"
 weight = 4
-
-[[menu.docs]]
-url = "/docs/frontmatter/"
-name = "Frontmatter"
-weight = 5
-
-[[menu.docs]]
-url = "/docs/shortcodes/"
-name = "Shortcodes"
-weight = 6
-
-[[menu.docs]]
-url = "/docs/archetypes/"
-name = "Archetypes"
-weight = 7
-
-[[menu.docs]]
-url = "/docs/extending/"
-name = "Extending"
-weight = 8
 
 [languages]
 [languages."en-us"]

@@ -2,10 +2,6 @@
 weight = 1
 +++
 
-# Welcome to Axiom
+# Welcome to Example.com
 
-Axiom is a powerful, high performance, modular Hugo theme, designed to make the readers of your content and the search engines happy.
-
-If you're looking to get started with Axiom in your own project, please visit the Docs [Quick Start]({{< relref "docs/quick-start" >}}) page now.
-
-Axiom source code repositories:
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
