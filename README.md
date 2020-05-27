@@ -9,14 +9,14 @@ Axiom is designed to make the readers of your content and the search engines hap
 To learn more, see the Quick Start, Documentation, and Live Example resources below:
 
 - Axiom Resources:
-  - [Quick Start](https://axiom-example.netlify.app/docs/quick-start/)
-  - [Documentation](https://axiom-example.netlify.app/docs/)
+  - [Quick Start](https://www.axiomtheme.com/docs/quick-start/)
+  - [Documentation](https://www.axiomtheme.com/docs/)
   - [Live Example](https://axiom-example.netlify.app/)
 - Axiom Repositories:
   - [Axiom Theme](https://github.com/marketempower/axiom)
   - [Axiom Example](https://github.com/marketempower/axiom-example)
 
-![Axiom](https://github.com/marketempower/axiom/raw/master/images/example.png)
+![Axiom Screenshot](https://github.com/marketempower/axiom/raw/master/images/example.png)
 
 # License
 
