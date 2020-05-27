@@ -175,7 +175,11 @@ adwordsConversionValue = 0
 facebookApp = "FB-DEV"
 # Facebook Pixel Id
 facebookPixel = "FB-DEV"
+# Disqus Comments
+disqusShortname = ""
 ```
+
+Comments are on by default when you set a `disqusShortname` value. Comments can be turned off an a post-by-post basis by using the [Frontmatter]({{< relref "docs/frontmatter" >}}) `comments` variable and setting it to `false`.
 
 > Tip: create a `config.dev.toml` file with test values for each service to prevent false positives on trackers.
 

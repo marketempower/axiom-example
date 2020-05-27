@@ -32,6 +32,10 @@ The Example website [Homepage](https://github.com/marketempower/axiom-example/bl
 
 Axiom has support for [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/rjndspxhgeglpwn0hwzv) CDN built in, and is serverless ready ([Netlify](https://www.netlify.com/), [Vercel](https://www.vercel.com/)).
 
+## Disqus Comments
+
+Disqus commenting is available on all Section's Single page view. Comments are on by default if you set a [Configuration]({{< relref "docs/configuration" >}}) Services `disqusShortname` value. Comments can be turned off an a post-by-post basis by using the [Frontmatter]({{< relref "docs/frontmatter" >}}) `comments` variable and setting it to `false`.
+
 ## Archetypes
 
 Axiom includes helpful Content generators to quickly create new Section entries. Visit the [Archetypes]({{< relref "docs/archetypes" >}}) page to learn more.

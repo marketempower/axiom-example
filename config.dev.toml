@@ -10,6 +10,7 @@ adwordsConversionId = ""
 adwordsConversionValue = 0
 facebookApp = ""
 facebookPixel = ""
+disqusShortname = ""
 
 [params.cdn]
 provider = "local"

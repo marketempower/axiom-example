@@ -49,6 +49,7 @@ adwordsConversionId = ""
 adwordsConversionValue = 0
 facebookApp = ""
 facebookPixel = ""
+disqusShortname = ""
 
 [params.logo]
 inline = true
