@@ -2,7 +2,7 @@ baseURL = "https://axiom-example.netlify.app"
 
 title = "Axiom Example"
 languageCode = "en-us"
-defaultContentLanguage = "en-us"
+defaultContentLanguage = "en"
 
 theme = "axiom"
 
@@ -151,6 +151,6 @@ name = "Privacy"
 weight = 4
 
 [languages]
-[languages."en-us"]
+[languages."en"]
 weight = 1
-languageName = "US English"
+languageName = "English"
