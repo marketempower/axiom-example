@@ -41,7 +41,7 @@ Blockquote without attribution:
 
 Blockquote with attribution:
 
-> You can trade hours for dollars or ideas for millions.</p>
+> You can trade hours for dollars or ideas for millions.<br>
 > — <cite>Cactus Jack[^1]</cite>
 
 [^1]: [The Shark Tank](https://www.example.com/).
