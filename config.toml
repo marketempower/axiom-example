@@ -116,7 +116,6 @@ typographer = false
 unsafe = true
 [markup.goldmark.parser]
 attribute = false
-autoHeadingID = false
 [markup.highlight]
 codeFences = true
 noClasses = false
