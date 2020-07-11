@@ -1,13 +1,14 @@
 baseURL = "http://localhost:1313"
 
 [params.services]
-analyticsId = ""
-adwordsId = ""
-adsenseId = ""
-adsenseAdSlotId = ""
-adsenseLoad = ""
-adwordsConversionId = ""
-adwordsConversionValue = 0
+googleAnalyticsId = ""
+googleTagManagerId = ""
+googleAdsId = ""
+googleAdsenseId = ""
+googleAdsenseAdSlotId = ""
+googleAdsenseLoad = ""
+googleAdsConversionId = ""
+googleAdsConversionValue = 0
 facebookApp = ""
 facebookPixel = ""
 disqusShortname = ""

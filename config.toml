@@ -40,13 +40,14 @@ youtube = "https://www.youtube.com/user"
 footer = ["twitter", "github", "instagram"]
 
 [params.services]
-analyticsId = "UA-160259978-2"
-adwordsId = ""
-adsenseId = ""
-adsenseAdSlotId = ""
-adsenseLoad = ""
-adwordsConversionId = ""
-adwordsConversionValue = 0
+googleAnalyticsId = "UA-160259978-2"
+googleTagManagerId = ""
+googleAdsId = ""
+googleAdsenseId = ""
+googleAdsenseAdSlotId = ""
+googleAdsenseLoad = ""
+googleAdsConversionId = ""
+googleAdsConversionValue = 0
 facebookApp = ""
 facebookPixel = ""
 disqusShortname = ""
