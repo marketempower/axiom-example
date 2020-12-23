@@ -1,12 +1,18 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const axiomTheme = require('./themes/axiom/tailwind.config')
+const axiomTailwindConfig = require('./themes/axiom/tailwind.config.js');
 
-// Unset to prevent duplication
-axiomTheme.purge.options.whitelist = [];
+// Unset the safelist, already included in Theme.
+axiomTailwindConfig.purge.options.safelist = [];
 
-// Example: How to add a custom font family
-axiomTheme.theme.extend.fontFamily = {
-  'content-custom': ['Custom Font', 'sans-serif']
-};
-
-module.exports = axiomTheme;
+module.exports = {
+  presets: [
+    axiomTailwindConfig
+  ],
+  theme: {
+    extend: {
+      // Example: How to add a custom font family
+      fontFamily: {
+        'content-custom': ['Custom Font', 'sans-serif'],
+      },
+    },
+  },
+}
